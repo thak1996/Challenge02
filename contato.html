@@ -7,7 +7,34 @@
   <title>Contato</title>
 </head>
 <body>
+<form action="" method="post">
+<fieldset>
+    <legend>Entre em Contato</legend>
+      <b>Assunto:</b>
+        <select>
+          <option value="support">Suporte</option>
+          <option value="suggestion">Sugestão</option>
+          <option value="complaint">Reclamação</option>
+          <option value="praise">Elogio</option>
+        </select><br></br>
+    <label>
+      <b>Nome Completo:</b>
+      <input placeholder="Seu Nome" type="text" required autocomplete="name"/>
+    </label><br><br>
+    <label form="email">
+      <b>E-mail:</b>
+      <input type="email" placeholder="Seu E-mail" required autocomplete="email" pattern=".+.com.\.br" title="Utilize o formato 'exemplo@exemplo.com.br'" />
+    </label><br><br>
+    <label>
+      <b>Mensagem:</b><br>
+      <textarea placeholder="Digite sua mensagem" required wrap="hard" cols="50" rows="10" maxlength="250" spellcheck="true" ></textarea>
+    </label><br><br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+</fieldset>
 
+
+</form>
   
 </body>
 </html>
